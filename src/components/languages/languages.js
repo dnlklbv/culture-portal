@@ -3,7 +3,7 @@ import './languages.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const Languages = () => (
-  <ul className="nav justify-content-end">
+  <ul className="nav justify-content-end languages-ul">
     <li className="nav-item nav-active language-li">
       <a className="active" href="/en">EN</a>
     </li>
