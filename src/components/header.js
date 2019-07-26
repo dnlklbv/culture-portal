@@ -42,7 +42,7 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-  siteTitle: 'Writers of Belarus',
+  siteTitle: 'Poets of Belarus',
 };
 
 export default Header;

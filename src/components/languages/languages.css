@@ -6,6 +6,8 @@
   font-weight: bold;
   font-style: italic;
   padding: 0.5rem;
+  box-sizing: border-box;
+
 }
 
 .language-li a {
