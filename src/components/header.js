@@ -4,6 +4,7 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import Languages from './languages/languages';
 
 const Header = ({ siteTitle }) => (
   <header
@@ -14,7 +15,7 @@ const Header = ({ siteTitle }) => (
   >
     <Container>
       <Row>
-        <Col lg={{ span: 8, offset: 2 }}>
+        <Col md={{ span: 4, offset: 2 }}>
           <h1 style={{ margin: 0, fontSize: '2rem' }}>
             <Link
               to="/"
@@ -27,6 +28,9 @@ const Header = ({ siteTitle }) => (
             </Link>
           </h1>
           <h2 style={{ fontSize: '1.2rem' }}>Information portal</h2>
+        </Col>
+        <Col md={{ span: 3, offset: 1 }}>
+          <Languages />
         </Col>
       </Row>
     </Container>

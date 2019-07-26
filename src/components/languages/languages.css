@@ -1,0 +1,19 @@
+.language-li {
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0.5rem;
+}
+
+.language-li a {
+  color: white;
+}
+
+.language-li a.active {
+  text-decoration: underline;
+  color: black;
+}
+
+.language-li a:hover {
+  color: black;
+}
