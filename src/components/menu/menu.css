@@ -13,7 +13,7 @@
   color: white;
   border-left: 1px solid white;
 }
-.nav-link:last-child {
+.navbar .nav-item:last-child {
   border-right: 1px solid white;
 }
 
