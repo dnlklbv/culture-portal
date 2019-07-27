@@ -10,6 +10,7 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       background: 'tomato',
+      padding: '0.3rem',
     }}
   >
     <Container>
@@ -28,7 +29,7 @@ const Header = ({ siteTitle }) => (
           </h1>
           <h2 style={{ fontSize: '1.2rem' }}>Information portal</h2>
         </Col>
-        <Col md={{ span: 4, offset: 1 }}>
+        <Col md={{ span: 4 }}>
           <Languages />
         </Col>
       </Row>

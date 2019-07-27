@@ -1,5 +1,9 @@
-.navbar {
+.nav-line {
   background-color: gray;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+.navbar {
   padding: 0;
 }
 .navbar-ul {
