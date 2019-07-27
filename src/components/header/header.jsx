@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       background: 'tomato',
-      marginBottom: '1.45rem',
+      padding: '0.3rem',
     }}
   >
     <Container>
