@@ -2,7 +2,7 @@ import React from 'react';
 import './languagesSwitch.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
-const Languages = () => (
+const LanguagesSwitch = () => (
   <ul className="nav justify-content-end languages-switch-ul">
     <li className="nav-item nav-active languages-switch-li">
       <a className="active" href="/en">EN</a>
@@ -16,4 +16,4 @@ const Languages = () => (
   </ul>
 );
 
-export default Languages;
+export default LanguagesSwitch;

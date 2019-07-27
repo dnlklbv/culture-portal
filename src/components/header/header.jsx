@@ -4,7 +4,7 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import Languages from '../languagesSwitch/languagesSwitch';
+import LanguagesSwitch from '../languagesSwitch/languagesSwitch';
 
 const Header = ({ siteTitle }) => (
   <header
@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => (
           <h2 style={{ fontSize: '1.2rem' }}>Information portal</h2>
         </Col>
         <Col md={{ span: 3, offset: 1 }}>
-          <Languages />
+          <LanguagesSwitch />
         </Col>
       </Row>
     </Container>
