@@ -1,0 +1,23 @@
+.nav-line {
+  background-color: gray;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+.navbar {
+  padding: 0;
+}
+.navbar-ul {
+  list-style-type: none;
+}
+.nav-link {
+  color: white;
+  border-left: 1px solid white;
+}
+.navbar .nav-item:last-child {
+  border-right: 1px solid white;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: gray;
+}

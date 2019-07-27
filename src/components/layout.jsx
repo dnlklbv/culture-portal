@@ -6,11 +6,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import Header from './header/header';
+import Header from './header';
+import Menu from './menu';
 
 const Layout = ({ children }) => (
   <>
     <Header />
+    <Menu />
     <main>
       <Container>
         <Row>
