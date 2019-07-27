@@ -4,7 +4,7 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import Languages from './languages/languages';
+import Languages from '../languages/languages';
 
 const Header = ({ siteTitle }) => (
   <header
