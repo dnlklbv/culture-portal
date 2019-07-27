@@ -28,10 +28,12 @@ const DevTeam = () => {
     <Card key={developer.username}>
       <Card.Img variant="top" src={`${ghURL + developer.username}.png`} />
       <Card.Body>
-        <Card.Title>{developer.name}</Card.Title>
+        <Card.Title className="mb-3">{developer.name}</Card.Title>
         <Card.Subtitle className="text-muted">{developer.username}</Card.Subtitle>
-        <Card.Link href={ghURL + developer.username} target="_blank">GitHub</Card.Link>
       </Card.Body>
+      <Card.Footer>
+        <Card.Link href={ghURL + developer.username} target="_blank">GitHub</Card.Link>
+      </Card.Footer>
     </Card>
   ));
 
