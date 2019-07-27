@@ -1,7 +1,7 @@
-.languages-ul {
+.languages-switch-ul {
   line-height: 50px;
 }
-.language-li {
+.languages-switch-li {
   font-size: 0.8rem;
   font-weight: bold;
   font-style: italic;
@@ -10,15 +10,15 @@
 
 }
 
-.language-li a {
+.languages-switch-li a {
   color: white;
 }
 
-.language-li a.active {
+.languages-switch-li a.active {
   text-decoration: underline;
   color: black;
 }
 
-.language-li a:hover {
+.languages-switch-li a:hover {
   color: black;
 }

@@ -1,16 +1,16 @@
 import React from 'react';
-import './languages.css';
+import './languagesSwitch.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const Languages = () => (
-  <ul className="nav justify-content-end languages-ul">
-    <li className="nav-item nav-active language-li">
+  <ul className="nav justify-content-end languages-switch-ul">
+    <li className="nav-item nav-active languages-switch-li">
       <a className="active" href="/en">EN</a>
     </li>
-    <li className="nav-item language-li">
+    <li className="nav-item languages-switch-li">
       <a href="/ru">RU</a>
     </li>
-    <li className="nav-item language-li">
+    <li className="nav-item languages-switch-li">
       <a href="/by">BY</a>
     </li>
   </ul>
