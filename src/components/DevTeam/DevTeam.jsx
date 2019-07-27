@@ -37,7 +37,7 @@ const DevTeam = () => {
 
   return (
     <>
-      <h2>Development team</h2>
+      <h2 className="mb-3">Development team</h2>
       <CardGroup>
         {developersCards}
       </CardGroup>
