@@ -2,6 +2,21 @@ import React, { Component } from 'react';
 
 import Form from 'react-bootstrap/Form';
 
+const authors = [
+  {
+    name: 'Maksim Adamavic',
+    birthPlace: 'Minsk',
+  },
+  {
+    name: 'Yanka Kupala',
+    birthPlace: 'Viazynka',
+  },
+  {
+    name: 'Yakub Kolas',
+    birthPlace: 'Akinchitsy',
+  },
+];
+
 class ListOfAuthors extends Component {
   constructor(props) {
     super(props);
