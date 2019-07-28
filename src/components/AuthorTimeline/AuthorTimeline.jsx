@@ -5,121 +5,46 @@ const AuthorTimeline = () => (
   <Timeline lineColor={'#ddd'}>
     <TimelineItem
       key="001"
-      dateText="11/2010 – Present"
-      style={{ color: '#e86971' }}
+      dateText="1891"
+      dateInnerStyle={{ background: 'tomato'}}
+      style={{ color: 'tomato' }}
     >
-      <h3>Title, Company</h3>
-      <h4>Subtitle</h4>
       <p>
-        Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-        exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-        nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-        reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-        est.
-      </p>
-      <p>
-        Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-        exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-        nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-        reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-        est.
-      </p>
-      <p>
-        Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-        exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-        nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-        reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-        est.
+        Bahdanovič was born in Minsk in the family of Adam Bahdanovič,
+        an important Belarusian ethnographer.
       </p>
     </TimelineItem>
     <TimelineItem
       key="002"
-      dateText="04/2009 – 11/2010"
-      dateInnerStyle={{ background: '#61b8ff', color: '#000' }}
-      bodyContainerStyle={{
-        background: '#ddd',
-        padding: '20px',
-        borderRadius: '8px',
-        boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
-      }}
+      dateText="1892"
+      dateInnerStyle={{ background: 'tomato'}}
+      style={{ color: 'tomato' }}
     >
-      <h3 style={{ color: '#61b8ff' }}>Title, Company</h3>
-      <h4 style={{ color: '#61b8ff' }}>Subtitle</h4>
       <p>
-        Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-        exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-        nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-        reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-        est.
-      </p>
-      <p>
-        Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-        exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-        nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-        reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-        est.
+        The family moved to Hrodna where Maksim's father received a job at local bank.
       </p>
     </TimelineItem>
     <TimelineItem
       key="003"
-      dateComponent={(
-        <div
-          style={{
-            display: 'block',
-            float: 'left',
-            padding: '10px',
-            background: 'rgb(150, 150, 150)',
-            color: '#fff',
-          }}
-        >
-          11/2008 – 04/2009
-        </div>
-      )}
+      dateText="1896"
+      dateInnerStyle={{ background: 'tomato'}}
+      style={{ color: 'tomato' }}
     >
-      <h3>Title, Company</h3>
-      <h4>Subtitle</h4>
       <p>
-        Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-        exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-        nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-        reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-        est.
-      </p>
-      <p>
-        Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-        exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-        nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-        reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-        est.
-      </p>
-      <p>
-        Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-        exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-        nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-        reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-        est.
+        The future poet's mother, Maria, died of tuberculosis.
+        Adam Bahdanovič moved with his children to Nizhny Novgorod, Russia.
+        At that time Maksim wrote his first poems in the Belarusian language.
       </p>
     </TimelineItem>
     <TimelineItem
       key="004"
-      dateText="08/2008 – 11/2008"
-      dateInnerStyle={{ background: '#76bb7f' }}
+      dateText="1902"
+      dateInnerStyle={{ background: 'tomato'}}
+      style={{ color: 'tomato' }}
     >
-      <h3>Title, Company</h3>
-      <h4>Subtitle</h4>
       <p>
-        Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-        exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-        nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-        reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-        est.
-      </p>
-      <p>
-        Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-        exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-        nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-        reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-        est.
+        Bahdanovič attended a gymnasium.
+        During the Revolution of 1905 he was an active participant of the strikes.
       </p>
     </TimelineItem>
   </Timeline>
