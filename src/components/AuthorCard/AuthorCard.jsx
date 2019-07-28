@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Table from 'react-bootstrap/Table';
+import AuthorTimeline from '../AuthorTimeline';
 
 const AuthorCard = () => (
   <Container>
@@ -47,7 +48,7 @@ const AuthorCard = () => (
     <Row>
       <Col md={{ span: 8, offset: 2 }}>
         <h2>Biography</h2>
-        <p>Timeline</p>
+        <AuthorTimeline />
       </Col>
     </Row>
   </Container>
