@@ -46,11 +46,13 @@ class ListOfAuthors extends Component {
           placeholder="Search by name, place of birth"
         />
         <ul>
-          {authors.map(author => (
-            <li>
-              <Link to={`/poets/${author.name}`}>{author.name}</Link>
-            </li>
-          ))
+          {authors
+            .filter(author => (author.name + author.birthPlace).includes(searchValue))
+            .map(author => (
+              <li>
+                <Link to={`/poets/${author.name}`}>{author.name}</Link>
+              </li>
+            ))
           }
         </ul>
       </>
