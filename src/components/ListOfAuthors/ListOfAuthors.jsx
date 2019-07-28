@@ -40,6 +40,7 @@ class ListOfAuthors extends Component {
     return (
       <>
         <Form.Control
+          className="mb-3"
           value={searchValue}
           onChange={handleSearchChange}
           size="lg"
