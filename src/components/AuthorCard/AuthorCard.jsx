@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Table from 'react-bootstrap/Table';
 import AuthorTimeline from '../AuthorTimeline';
 import AuthorWorks from '../AuthorWorks';
+import AuthorGallery from '../AuthorGallery';
 
 const AuthorCard = () => (
   <Container>
@@ -46,16 +47,22 @@ const AuthorCard = () => (
         </Card>
       </Col>
     </Row>
-    <Row>
+    <Row className="mb-5">
       <Col className="pl-0" >
         <h2>Biography</h2>
         <AuthorTimeline />
       </Col>
     </Row>
-    <Row>
+    <Row className="mb-5">
       <Col className="pl-0">
         <h2 className="mb-4">Works</h2>
         <AuthorWorks />
+      </Col>
+    </Row>
+    <Row className="mb-5">
+      <Col>
+      <h2 className="mb-4">Gallery</h2>
+        <AuthorGallery />
       </Col>
     </Row>
   </Container>
