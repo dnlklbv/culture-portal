@@ -8,11 +8,13 @@ import Col from 'react-bootstrap/Col';
 
 import Header from './header';
 import Menu from './menu';
+import AuthorCard from './AuthorCard';
 
 const Layout = ({ children }) => (
   <>
     <Header />
     <Menu />
+    <AuthorCard />
     <main>
       <Container>
         <Row>
