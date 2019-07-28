@@ -5,17 +5,26 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 
 const DayAuthor = () => {
+  const authors = [];
+  const randomAuthor = (authorsList) => {
+    const randomIndex = Math.floor(Math.random() * authorsList.length);
+    return authorsList[randomIndex];
+  };
+
+  const dayAuthor = randomAuthor(authors);
+
   const authorCard = (
     <Card>
       <Row>
         <Col md={4}>
-          <Card.Img />
+          <Card.Img src={dayAuthor.img} />
         </Col>
         <Col md={8}>
           <Card.Body>
-            <Card.Title>{}</Card.Title>
-            <Card.Subtitle className="text-muted">{}</Card.Subtitle>
-            <Card.Text>{}</Card.Text>
+            <Card.Title>{dayAuthor.name}</Card.Title>
+            <Card.Subtitle className="text-muted">{dayAuthor.date}</Card.Subtitle>
+            <Card.Text>{dayAuthor.shortDescription}</Card.Text>
+            <Card.Link href="#">More about...</Card.Link>
           </Card.Body>
         </Col>
       </Row>
