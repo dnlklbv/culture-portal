@@ -2,7 +2,7 @@ import React from 'react';
 import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
 
 const AuthorTimeline = () => (
-  <Timeline lineColor={'#ddd'}>
+  <Timeline lineColor={'#ddd'} className="mt-3">
     <TimelineItem
       key="001"
       dateText="1891"

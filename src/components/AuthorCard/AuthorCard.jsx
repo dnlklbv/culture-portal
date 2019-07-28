@@ -9,14 +9,14 @@ import AuthorTimeline from '../AuthorTimeline';
 const AuthorCard = () => (
   <Container>
     <Row className="mb-5">
-      <Col md={{ span: 3, offset: 2 }}>
+      <Col className="pl-0"  md={{ span: 4 }}>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Maxim_Bogdanovich_by_Valentin_Volkov_1927.JPG/220px-Maxim_Bogdanovich_by_Valentin_Volkov_1927.JPG"
           alt="img"
           width="100%"
         />
       </Col>
-      <Col md={{ span: 5 }}>
+      <Col>
         <Card border="light">
           <Card.Body>
             <Card.Title>Maksim Bahdanovich</Card.Title>
@@ -46,7 +46,7 @@ const AuthorCard = () => (
       </Col>
     </Row>
     <Row>
-      <Col md={{ span: 8, offset: 2 }}>
+      <Col className="pl-0" >
         <h2>Biography</h2>
         <AuthorTimeline />
       </Col>
