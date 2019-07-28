@@ -22,6 +22,10 @@ const DevTeam = () => {
       name: 'Krystsina Gerko',
       username: 'ChrisGerBy',
     },
+    {
+      name: 'Christsina Alimova',
+      username: 'ChristinaAlimova',
+    },
   ];
 
   const developersCards = developers.map(developer => (
