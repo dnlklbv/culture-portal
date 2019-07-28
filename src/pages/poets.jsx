@@ -8,7 +8,7 @@ import ListOfAuthors from '../components/ListOfAuthors';
 const SecondPage = () => (
   <Layout>
     <SEO title="Poets" />
-    <h2>Poets</h2>
+    <h2 className="mb-4">Poets</h2>
     <ListOfAuthors />
   </Layout>
 );
