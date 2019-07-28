@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'gatsby';
 
 import Form from 'react-bootstrap/Form';
 
@@ -37,12 +38,22 @@ class ListOfAuthors extends Component {
     const { searchValue } = this.state;
     const { handleSearchChange } = this;
     return (
-      <Form.Control
-        value={searchValue}
-        onChange={handleSearchChange}
-        size="lg"
-        placeholder="Search by name, place of birth"
-      />
+      <>
+        <Form.Control
+          value={searchValue}
+          onChange={handleSearchChange}
+          size="lg"
+          placeholder="Search by name, place of birth"
+        />
+        <ul>
+          {authors.map(author => (
+            <li>
+              <Link to={`/poets/${author.name}`}>{author.name}</Link>
+            </li>
+          ))
+          }
+        </ul>
+      </>
     );
   }
 }
