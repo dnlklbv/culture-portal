@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+import DayAuthor from '../components/DayAuthor';
 import DevTeam from '../components/DevTeam';
 
 const IndexPage = () => (
@@ -21,6 +22,7 @@ const IndexPage = () => (
       voluptate est aute dolor excepteur aute officia. Non nisi dolore ullamco in ullamco deserunt
       dolore est. Mollit fugiat anim velit aute ea non nisi amet eiusmod commodo.
     </p>
+    <DayAuthor />
     <DevTeam />
   </Layout>
 );
