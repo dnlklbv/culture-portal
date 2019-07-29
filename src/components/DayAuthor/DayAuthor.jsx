@@ -27,7 +27,7 @@ const DayAuthor = () => {
   const dayAuthor = randomAuthor(authors);
 
   const authorCard = (
-    <Card>
+    <Card className="mb-3">
       <Row>
         <Col md={4}>
           <Card.Img src={dayAuthor.img} />
@@ -36,7 +36,7 @@ const DayAuthor = () => {
           <Card.Body>
             <Card.Title>{dayAuthor.name}</Card.Title>
             <Card.Subtitle className="text-muted">{dayAuthor.date}</Card.Subtitle>
-            <Card.Text>{dayAuthor.shortDescription}</Card.Text>
+            <Card.Text className="mt-3">{dayAuthor.shortDescription}</Card.Text>
             <Card.Link href="#">More about...</Card.Link>
           </Card.Body>
         </Col>
