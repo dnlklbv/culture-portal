@@ -27,10 +27,10 @@ const DayAuthor = () => {
   const dayAuthor = randomAuthor(authors);
 
   const authorCard = (
-    <Card className="mb-3">
+    <Card className="mb-5">
       <Row>
         <Col md={4}>
-          <Card.Img src={dayAuthor.img} />
+          <Card.Link href="#"><Card.Img src={dayAuthor.img} /></Card.Link>
         </Col>
         <Col md={8}>
           <Card.Body>
