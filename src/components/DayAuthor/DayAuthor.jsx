@@ -46,7 +46,7 @@ const DayAuthor = () => {
 
   return (
     <>
-      <h2 className="mb-4">Author of the day:</h2>
+      <h2 className="mb-4">Author of the day</h2>
       {authorCard}
     </>
   );
