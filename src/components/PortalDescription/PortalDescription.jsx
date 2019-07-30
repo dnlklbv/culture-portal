@@ -1,16 +1,19 @@
 import React from 'react';
+import Jumbotron from 'react-bootstrap/Jumbotron';
 
 const PortalDescription = () => (
-  <div>
-  <h2
-      style={{ textAlign: 'center' }}>
+  <Jumbotron className="px-5 py-4 mb-5">
+    <h2
+      className="mb-5"
+      style={{ textAlign: 'center' }}
+    >
         Welcome to the information portal about the poets of Belarus!
     </h2>
     <p>
       On this website you can find:
       <ul>
         <li>
-          the biography of the authors that describes the most important stages of their  lives,
+          the biographies of the authors that describe the most important stages of their  lives,
         </li>
         <li>
           the maps of memorable places connected with their life and work,
@@ -25,7 +28,7 @@ const PortalDescription = () => (
     <p>
       Enjoy reading and exploring the lives of the most honored poets of Belarus!
     </p>
-  </div>
+  </Jumbotron>
 );
 
 export default PortalDescription;
