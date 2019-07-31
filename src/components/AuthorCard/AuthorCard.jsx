@@ -7,11 +7,12 @@ import Table from 'react-bootstrap/Table';
 import AuthorTimeline from '../AuthorTimeline';
 import AuthorWorks from '../AuthorWorks';
 import AuthorGallery from '../AuthorGallery';
+import AuthorVideo from '../AuthorVideo';
 
 const AuthorCard = () => (
   <Container>
     <Row className="mb-5">
-      <Col className="pl-0"  md={{ span: 4 }}>
+      <Col className="pl-0" md={{ span: 4 }}>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Maxim_Bogdanovich_by_Valentin_Volkov_1927.JPG/220px-Maxim_Bogdanovich_by_Valentin_Volkov_1927.JPG"
           alt="img"
@@ -48,7 +49,7 @@ const AuthorCard = () => (
       </Col>
     </Row>
     <Row className="mb-5">
-      <Col className="pl-0" >
+      <Col className="pl-0">
         <h2>Biography</h2>
         <AuthorTimeline />
       </Col>
@@ -61,8 +62,14 @@ const AuthorCard = () => (
     </Row>
     <Row className="mb-5">
       <Col>
-      <h2 className="mb-4">Gallery</h2>
+        <h2 className="mb-4">Gallery</h2>
         <AuthorGallery />
+      </Col>
+    </Row>
+    <Row className="mb-5">
+      <Col>
+        <h2 className="mb-4">Video</h2>
+        <AuthorVideo />
       </Col>
     </Row>
   </Container>

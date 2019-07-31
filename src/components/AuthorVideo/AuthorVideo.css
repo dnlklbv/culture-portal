@@ -1,0 +1,19 @@
+.author-video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 98px;
+  height: 78px;
+  border: none;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  padding: 0;
+}
+
+.youtube-icon {
+  width: 98px;
+  height: 78px;
+}
+.youtube-icon:hover {
+  fill: red;
+}
