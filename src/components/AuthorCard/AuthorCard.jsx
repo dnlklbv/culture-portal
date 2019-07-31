@@ -8,6 +8,7 @@ import AuthorTimeline from '../AuthorTimeline';
 import AuthorWorks from '../AuthorWorks';
 import AuthorGallery from '../AuthorGallery';
 import AuthorVideo from '../AuthorVideo';
+import AuthorMap from '../AuthorMap';
 
 const AuthorCard = () => (
   <Container>
@@ -70,6 +71,12 @@ const AuthorCard = () => (
       <Col>
         <h2 className="mb-4">Video</h2>
         <AuthorVideo />
+      </Col>
+    </Row>
+    <Row className="mb-5">
+      <Col>
+        <h2 className="mb-4">Map</h2>
+        <AuthorMap />
       </Col>
     </Row>
   </Container>
