@@ -17,6 +17,25 @@ export class AuthorMap extends React.Component {
       this.state.places.push(coordinate);
     }
   }
+
+  render() {
+    return (
+      <Map
+        google={this.props.google}
+        style={{ width: '50%', height: '50%' }}
+        zoom={8}
+        initialCenter={{ lat: 53.915708, lng: 27.582618 }}
+      >
+        {this.displayMarkers()}
+        <InfoWindow
+          marker={this.state.activeMarker}
+          visible={this.state.showingInfoWindow}
+        >
+          {this.state.infoText}
+        </InfoWindow>
+      </Map>
+    );
+  }
 }
 
 export default GoogleApiWrapper({
