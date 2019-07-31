@@ -18,6 +18,24 @@ export class AuthorMap extends React.Component {
     }
   }
 
+  onMarkerClick = (props, marker, e) =>{
+    console.log(this.props);
+  this.setState({
+    activeMarker: marker,
+    showingInfoWindow: true,
+    infoText: this.props.coordinates[props.id].descr
+  })};
+
+  displayMarkers = () => {
+    return this.state.places.map((store, index) => {
+      return <Marker key={index} id={index} position={{
+       lat: store.latitude,
+       lng: store.longitude
+     }}
+     onClick={this.onMarkerClick} />
+    })
+  }
+
   render() {
     return (
       <Map
