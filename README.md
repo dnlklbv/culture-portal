@@ -29,3 +29,5 @@
 | 1h | implement Timeline component for Author's biography |
 | 0.5h | use Table component to organise works of the author |
 | 1h | setup image gallery |
+| 1h | write and style portal description |
+| 2h | add video to the AuthorCard |
