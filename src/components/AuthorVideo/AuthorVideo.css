@@ -8,12 +8,16 @@
   background-color: transparent;
   transform: translate(-50%, -50%);
   padding: 0;
+  outline: none;
 }
 
 .youtube-icon {
   width: 98px;
   height: 78px;
 }
-.youtube-icon:hover {
+
+.author-video-block:hover .youtube-icon,
+.author-video-btn:focus .youtube-icon {
   fill: red;
+  fill-opacity: 1;
 }
