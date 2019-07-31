@@ -1,19 +1,28 @@
 import React from 'react';
-import './languagesSwitch.css';
-import 'bootstrap/dist/css/bootstrap.css';
+import PropTypes from 'prop-types';
 
-const LanguagesSwitch = () => (
-  <ul className="nav justify-content-end languages-switch-ul">
-    <li className="nav-item nav-active languages-switch-li">
-      <a className="active" href="/en">EN</a>
-    </li>
-    <li className="nav-item languages-switch-li">
-      <a href="/ru">RU</a>
-    </li>
-    <li className="nav-item languages-switch-li">
-      <a href="/by">BY</a>
-    </li>
-  </ul>
+import { withTranslation } from 'react-i18next';
+
+import 'bootstrap/dist/css/bootstrap.css';
+import Form from 'react-bootstrap/Form';
+
+const LanguagesSwitch = ({ i18n }) => (
+  <Form.Control
+    as="select"
+    size="sm"
+    defaultValue={i18n.language}
+    onChange={(e) => { i18n.changeLanguage(e.target.value); }}
+  >
+    <option>en</option>
+    <option>ru</option>
+    <option>by</option>
+  </Form.Control>
 );
 
-export default LanguagesSwitch;
+LanguagesSwitch.propTypes = {
+  i18n: PropTypes.shape({
+    language: PropTypes.string,
+    changeLanguage: PropTypes.func,
+  }).isRequired,
+};
+export default withTranslation()(LanguagesSwitch);
