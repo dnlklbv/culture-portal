@@ -1,11 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
+import { withTranslation } from 'react-i18next';
+
 import './menu.css';
+
 import { Link } from 'gatsby';
+
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 
-const Menu = () => (
+const Menu = ({ t }) => (
   <div className="nav-line">
     <Container>
       <Row>
@@ -13,13 +19,13 @@ const Menu = () => (
           <nav className="navbar">
             <ul className="nav navbar-ul">
               <li className="nav-item">
-                <Link className="nav-link" to="/">Home</Link>
+                <Link className="nav-link" to="/">{t('Home')}</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/poets">Poets</Link>
+                <Link className="nav-link" to="/poets">{t('Poets')}</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/">Contact us</Link>
+                <Link className="nav-link" to="/">{t('Contact us')}</Link>
               </li>
             </ul>
           </nav>
@@ -29,4 +35,8 @@ const Menu = () => (
   </div>
 );
 
-export default Menu;
+Menu.propTypes = {
+  t: PropTypes.func.isRequired,
+};
+
+export default withTranslation()(Menu);
