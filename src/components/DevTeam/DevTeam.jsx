@@ -1,9 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
+import { withTranslation } from 'react-i18next';
 
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 
-const DevTeam = () => {
+const DevTeam = ({ t }) => {
   const ghURL = 'https://github.com/';
   const developers = [
     {
@@ -43,7 +46,7 @@ const DevTeam = () => {
 
   return (
     <>
-      <h2 className="mb-3">Development team</h2>
+      <h2 className="mb-3">{t('Development team')}</h2>
       <CardGroup>
         {developersCards}
       </CardGroup>
@@ -51,4 +54,8 @@ const DevTeam = () => {
   );
 };
 
-export default DevTeam;
+DevTeam.propTypes = {
+  t: PropTypes.func.isRequired,
+};
+
+export default withTranslation()(DevTeam);
