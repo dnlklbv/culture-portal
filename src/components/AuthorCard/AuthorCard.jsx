@@ -1,16 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
+import { withTranslation } from 'react-i18next';
+
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Table from 'react-bootstrap/Table';
+
 import AuthorTimeline from '../AuthorTimeline';
 import AuthorWorks from '../AuthorWorks';
 import AuthorGallery from '../AuthorGallery';
 import AuthorVideo from '../AuthorVideo';
 import AuthorMap from '../AuthorMap';
 
-const AuthorCard = () => (
+const AuthorCard = ({ t }) => (
   <Container>
     <Row className="mb-5">
       <Col className="pl-0" md={{ span: 4 }}>
@@ -28,19 +33,31 @@ const AuthorCard = () => (
             <Card.Text>
               <Table borderless="true" size="sm">
                 <tr>
-                  <th className="pl-0">Born:</th>
+                  <th className="pl-0">
+                    {t('Born')}
+                    :
+                  </th>
                   <td>9 December 1891</td>
                 </tr>
                 <tr>
-                  <th className="pl-0">Died:</th>
+                  <th className="pl-0">
+                    {t('Died')}
+                    :
+                  </th>
                   <td>25 May 1917</td>
                 </tr>
                 <tr>
-                  <th className="pl-0">Genre:</th>
+                  <th className="pl-0">
+                    {t('Genre')}
+                    :
+                  </th>
                   <td>verse, poem</td>
                 </tr>
                 <tr>
-                  <th className="pl-0">Literary movement:</th>
+                  <th className="pl-0">
+                    {t('Literary movement')}
+                    :
+                  </th>
                   <td>impressionism, symbolism</td>
                 </tr>
               </Table>
@@ -51,31 +68,31 @@ const AuthorCard = () => (
     </Row>
     <Row className="mb-5">
       <Col className="pl-0">
-        <h2>Biography</h2>
+        <h2>{t('Biography')}</h2>
         <AuthorTimeline />
       </Col>
     </Row>
     <Row className="mb-5">
       <Col className="pl-0">
-        <h2 className="mb-4">Works</h2>
+        <h2 className="mb-4">{t('Works')}</h2>
         <AuthorWorks />
       </Col>
     </Row>
     <Row className="mb-5">
       <Col>
-        <h2 className="mb-4">Gallery</h2>
+        <h2 className="mb-4">{t('Gallery')}</h2>
         <AuthorGallery />
       </Col>
     </Row>
     <Row className="mb-5">
       <Col>
-        <h2 className="mb-4">Video</h2>
+        <h2 className="mb-4">{t('Video')}</h2>
         <AuthorVideo />
       </Col>
     </Row>
     <Row className="mb-5">
       <Col>
-        <h2 className="mb-4">Map</h2>
+        <h2 className="mb-4">{t('Map')}</h2>
         <AuthorMap coordinates={[
           { lat: 53.910404, lng: 27.559271, descr: 'Monument' },
           { lat: 53.908069, lng: 27.556095, descr: 'Museum' },
@@ -87,4 +104,8 @@ const AuthorCard = () => (
   </Container>
 );
 
-export default AuthorCard;
+AuthorCard.propTypes = {
+  t: PropTypes.func.isRequired,
+};
+
+export default withTranslation()(AuthorCard);
