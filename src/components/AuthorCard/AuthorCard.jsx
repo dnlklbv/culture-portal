@@ -76,7 +76,12 @@ const AuthorCard = () => (
     <Row className="mb-5">
       <Col>
         <h2 className="mb-4">Map</h2>
-        <AuthorMap />
+        <AuthorMap coordinates={[
+          { lat: 53.910404, lng: 27.559271, descr: 'Monument' },
+          { lat: 53.908069, lng: 27.556095, descr: 'Museum' },
+          { lat: 53.921296, lng: 27.567689, descr: 'Street' },
+        ]}
+        />
       </Col>
     </Row>
   </Container>

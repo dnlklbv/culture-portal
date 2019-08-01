@@ -1,5 +1,6 @@
 import React from 'react';
 import {Map, GoogleApiWrapper, Marker, InfoWindow} from 'google-maps-react';
+import './AuthorMap.css';
 
 export class AuthorMap extends React.Component {
   constructor(props) {
@@ -12,18 +13,23 @@ export class AuthorMap extends React.Component {
       places: [],
     };
 
-    for (let i = 0; i < props.coordinates.length; i += 1) {
-      let coordinate = {latitude: props.coordinates[i].lat, longitude: props.coordinates[i].lng};
-      this.state.places.push(coordinate);
+    if (props.coordinates !== undefined) {
+      for (let i = 0; i < props.coordinates.length; i += 1) {
+        let coordinate = {latitude: props.coordinates[i].lat, longitude: props.coordinates[i].lng};
+        this.state.places.push(coordinate);
+      }
     }
   }
 
-  onMarkerClick = (props, marker, e) =>{
-    console.log(this.props);
+  onMarkerClick = (props, marker, e) => {
+  let infoText = '';
+  if (this.props.coordinates !== undefined) {
+    infoText = this.props.coordinates[props.id].descr;
+  }
   this.setState({
     activeMarker: marker,
     showingInfoWindow: true,
-    infoText: this.props.coordinates[props.id].descr
+    infoText: infoText
   })};
 
   displayMarkers = () => {
@@ -38,20 +44,22 @@ export class AuthorMap extends React.Component {
 
   render() {
     return (
-      <Map
-        google={this.props.google}
-        style={{ width: '50%', height: '50%' }}
-        zoom={8}
-        initialCenter={{ lat: 53.915708, lng: 27.582618 }}
-      >
-        {this.displayMarkers()}
-        <InfoWindow
-          marker={this.state.activeMarker}
-          visible={this.state.showingInfoWindow}
+      <div className="author-map-block">
+        <Map
+          google={this.props.google}
+          style={{ width: '100%', height: '800%' }}
+          zoom={8}
+          initialCenter={{ lat: 53.915708, lng: 27.582618 }}
         >
-          {this.state.infoText}
-        </InfoWindow>
-      </Map>
+          {this.displayMarkers()}
+          <InfoWindow
+            marker={this.state.activeMarker}
+            visible={this.state.showingInfoWindow}
+          >
+            {this.state.infoText}
+          </InfoWindow>
+        </Map>
+      </div>
     );
   }
 }
