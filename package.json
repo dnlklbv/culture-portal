@@ -15,6 +15,7 @@
     "gatsby-source-filesystem": "^2.1.6",
     "gatsby-transformer-sharp": "^2.2.4",
     "gh-pages": "^2.0.1",
+    "google-maps-react": "^2.0.2",
     "i18next": "^17.0.7",
     "i18next-browser-languagedetector": "^3.0.1",
     "prop-types": "^15.7.2",

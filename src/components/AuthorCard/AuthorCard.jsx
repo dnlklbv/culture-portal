@@ -8,6 +8,7 @@ import AuthorTimeline from '../AuthorTimeline';
 import AuthorWorks from '../AuthorWorks';
 import AuthorGallery from '../AuthorGallery';
 import AuthorVideo from '../AuthorVideo';
+import AuthorMap from '../AuthorMap';
 
 const AuthorCard = () => (
   <Container>
@@ -70,6 +71,17 @@ const AuthorCard = () => (
       <Col>
         <h2 className="mb-4">Video</h2>
         <AuthorVideo />
+      </Col>
+    </Row>
+    <Row className="mb-5">
+      <Col>
+        <h2 className="mb-4">Map</h2>
+        <AuthorMap coordinates={[
+          { lat: 53.910404, lng: 27.559271, descr: 'Monument' },
+          { lat: 53.908069, lng: 27.556095, descr: 'Museum' },
+          { lat: 53.921296, lng: 27.567689, descr: 'Street' },
+        ]}
+        />
       </Col>
     </Row>
   </Container>
