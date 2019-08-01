@@ -1,0 +1,28 @@
+{
+  "Kupala": {
+    "en": {
+      "name": "Yanka Kupala (Iván Daminíkavich Lutsévich",
+      "description": "poet, publicist, translator, literary critic",
+      "birth": "7 July (25 June) 1882",
+      "death": "28 June 1942",
+      "genre": "verse, poem",
+      "literaryMovement": "impressionism, symbolism"
+    },
+    "ru": {
+      "name": "Я́нка Купа́ла (Ива́н Домини́кович Луце́вич)",
+      "description": "поэт, публицист, переводчик, литературный критик",
+      "birth": "25 июня (7 июля) 1882",
+      "death": "28 июня 1942",
+      "genre": "поэзия",
+      "literaryMovement": "импресиионизм, символизм"
+    },
+    "by": {
+      "name": "Я́нка Купа́ла (Іва́н Даміні́кавіч Луцэ́віч)",
+      "description": "паэт, публiцыст, перакладчык, лiтературны крытык",
+      "birth": "25 чэрвеня (7 ліпеня) 1882",
+      "death": "28 чэрвеня 1942",
+      "genre": "паэзiя",
+      "literaryMovement": "iмпрэсiянiзм, сiмвалiзм"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Kolas": {
+    "en": {
+      "name": "Yakub Kolas (also Jakub Kołas) (Kanstancin Mickievič) ",
+      "description": "poet, publicist, translator, literary critic",
+      "birth": "November 3 (October 22) 1882",
+      "death": "August 13, 1956",
+      "genre": "verse, poem",
+      "literaryMovement": "impressionism, symbolism"
+    },
+    "ru": {
+      "name": "Яку́б Ко́лас (Константи́н Миха́йлович Мицке́вич)",
+      "description": "поэт, публицист, переводчик, литературный критик",
+      "birth": "22 октября (3 ноября) 1882",
+      "death": "13 августа 1956",
+      "genre": "поэзия",
+      "literaryMovement": "импресиионизм, символизм"
+    },
+    "by": {
+      "name": "Яку́б Ко́лас (Канстанці́н Міха́йлавіч Міцке́віч)",
+      "description": "паэт, публiцыст, перакладчык, лiтературны крытык",
+      "birth": "22 кастрычніка (3 лістапада) 1882",
+      "death": "13 жніўня 1956",
+      "genre": "паэзiя",
+      "literaryMovement": "iмпрэсiянiзм, сiмвалiзм"
+    }
+  }
+}

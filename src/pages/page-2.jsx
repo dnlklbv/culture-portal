@@ -5,7 +5,7 @@ import SEO from '../components/seo';
 
 import ListOfAuthors from '../components/ListOfAuthors';
 import AuthorCard from '../components/AuthorCard';
-import data from '../data/authors.json';
+import data from '../data/bahdanovich.json';
 
 /* const SecondPage = () => (
   <Layout>

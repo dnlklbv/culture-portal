@@ -7,14 +7,17 @@ const authors = [
   {
     name: 'Maksim Adamavic',
     birthPlace: 'Minsk',
+    url: 'bahdanovich',
   },
   {
     name: 'Yanka Kupala',
     birthPlace: 'Viazynka',
+    url: 'kupala',
   },
   {
     name: 'Yakub Kolas',
     birthPlace: 'Akinchitsy',
+    url: 'kolas',
   },
 ];
 
@@ -51,7 +54,7 @@ class ListOfAuthors extends Component {
             .filter(author => (author.name + author.birthPlace).includes(searchValue))
             .map(author => (
               <li>
-                <Link to={`/poets/${author.name}`}>{author.name}</Link>
+                <Link to={`/poets/${author.url}`}>{author.name}</Link>
               </li>
             ))
           }
