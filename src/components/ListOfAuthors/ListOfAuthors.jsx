@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
+
+import { withTranslation } from 'react-i18next';
 
 import Form from 'react-bootstrap/Form';
 
@@ -36,6 +39,7 @@ class ListOfAuthors extends Component {
 
   render() {
     const { searchValue } = this.state;
+    const { t } = this.props;
     const { handleSearchChange } = this;
     return (
       <>
@@ -44,7 +48,7 @@ class ListOfAuthors extends Component {
           value={searchValue}
           onChange={handleSearchChange}
           size="lg"
-          placeholder="Search by name, place of birth"
+          placeholder={t('Search by name, place of birth')}
         />
         <ul>
           {authors
@@ -61,4 +65,8 @@ class ListOfAuthors extends Component {
   }
 }
 
-export default ListOfAuthors;
+ListOfAuthors.propTypes = {
+  t: PropTypes.func.isRequired,
+};
+
+export default withTranslation()(ListOfAuthors);
