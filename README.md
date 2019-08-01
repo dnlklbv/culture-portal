@@ -21,6 +21,9 @@
 | 1h | create development team component |
 | 1h | create a page with a list of authors and search |
 | 2h | implement querying data from json |
+| 3h | implemeny querying data from contentful |
+| 1h | add translations for interface |
+| 4h | research language-specific queries with i18next |
 
 ### christinaalimova
 |time spent|feature|
