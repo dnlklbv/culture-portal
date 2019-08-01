@@ -1,5 +1,5 @@
 import React from 'react';
-import {Map, GoogleApiWrapper, Marker, InfoWindow} from 'google-maps-react';
+import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 import './AuthorMap.css';
 
 export class AuthorMap extends React.Component {
