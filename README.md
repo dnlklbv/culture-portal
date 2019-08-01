@@ -29,3 +29,4 @@
 | 1h | implement Timeline component for Author's biography |
 | 0.5h | use Table component to organise works of the author |
 | 1h | setup image gallery |
+| 2h | fill data of the authors |
