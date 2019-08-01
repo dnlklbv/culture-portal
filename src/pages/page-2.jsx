@@ -5,13 +5,14 @@ import SEO from '../components/seo';
 
 import ListOfAuthors from '../components/ListOfAuthors';
 import AuthorCard from '../components/AuthorCard';
+import data from '../data/authors.en.json';
 
 const SecondPage = () => (
   <Layout>
     <SEO title="Poets" />
     <h2 className="mb-4">Poets</h2>
     <ListOfAuthors />
-    <AuthorCard />
+    <AuthorCard data={data.Bahdanovich} />
   </Layout>
 );
 
