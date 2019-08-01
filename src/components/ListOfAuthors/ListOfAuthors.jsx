@@ -3,20 +3,20 @@ import { Link } from 'gatsby';
 
 import Form from 'react-bootstrap/Form';
 
-const authors = [
-  {
-    name: 'Maksim Adamavic',
-    birthPlace: 'Minsk',
-  },
-  {
-    name: 'Yanka Kupala',
-    birthPlace: 'Viazynka',
-  },
-  {
-    name: 'Yakub Kolas',
-    birthPlace: 'Akinchitsy',
-  },
-];
+// const authors = [
+//   {
+//     name: 'Maksim Adamavic',
+//     birthPlace: 'Minsk',
+//   },
+//   {
+//     name: 'Yanka Kupala',
+//     birthPlace: 'Viazynka',
+//   },
+//   {
+//     name: 'Yakub Kolas',
+//     birthPlace: 'Akinchitsy',
+//   },
+// ];
 
 class ListOfAuthors extends Component {
   constructor(props) {
@@ -37,6 +37,7 @@ class ListOfAuthors extends Component {
   render() {
     const { searchValue } = this.state;
     const { handleSearchChange } = this;
+    const { authors } = this.props;
     return (
       <>
         <Form.Control
@@ -48,10 +49,10 @@ class ListOfAuthors extends Component {
         />
         <ul>
           {authors
-            .filter(author => (author.name + author.birthPlace).includes(searchValue))
+            .filter(author => (author.node.name + author.node.birthPlace).includes(searchValue))
             .map(author => (
               <li>
-                <Link to={`/poets/${author.name}`}>{author.name}</Link>
+                <Link to={`/poets/${author.node.name}`}>{author.node.name}</Link>
               </li>
             ))
           }
