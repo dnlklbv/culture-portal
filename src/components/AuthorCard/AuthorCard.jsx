@@ -13,7 +13,7 @@ import AuthorGallery from '../AuthorGallery';
 
 const AuthorCard = ({ data }) => {
   const {
-    name, birth, death, genre, literaryMovement,
+    name, description, birth, death, genre, literaryMovement,
   } = data;
   return (
     <Container>
@@ -31,7 +31,9 @@ const AuthorCard = ({ data }) => {
               <Card.Title>
                 {name}
               </Card.Title>
-              <Card.Subtitle className="mb-3 text-muted">poet, publicist, translator, literary critic</Card.Subtitle>
+              <Card.Subtitle className="mb-3 text-muted">
+                {description}
+              </Card.Subtitle>
               <Card.Text>
                 <Table borderless="true" size="sm">
                   <tr>
@@ -81,6 +83,7 @@ const AuthorCard = ({ data }) => {
 AuthorCard.propTypes = {
   data: PropTypes.shape({
     name: PropTypes.string,
+    description: PropTypes.string,
     birth: PropTypes.string,
     death: PropTypes.string,
     genre: PropTypes.string,

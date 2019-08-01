@@ -1,0 +1,28 @@
+{
+  "Bahdanovich": {
+    "en": {
+      "name": "Maksim Adamavič Bahdanovič",
+      "description": "poet, publicist, translator, literary critic",
+      "birth": "9 December 1891",
+      "death": "25 May 1917",
+      "genre": "verse, poem",
+      "literaryMovement": "impressionism, symbolism"
+    },
+    "ru": {
+      "name": "Макси́м Ада́мович Богдано́вич",
+      "description": "поэт, публицист, переводчик, литературный критик",
+      "birth": "9 декабря 1891",
+      "death": "25 мая 1917",
+      "genre": "поэзия",
+      "literaryMovement": "импресиионизм, символизм"
+    },
+    "by": {
+      "name": "Максі́м Ада́мавіч Багдано́віч",
+      "description": "паэт, публiцыст, перакладчык, лiтературны крытык",
+      "birth": "9 снежня 1891",
+      "death": "25 мая 1917",
+      "genre": "паэзiя",
+      "literaryMovement": "iмпрэсiянiзм, сiмвалiзм"
+    }
+  }
+}
