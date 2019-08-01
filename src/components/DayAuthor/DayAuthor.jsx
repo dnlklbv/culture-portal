@@ -3,8 +3,10 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
+import PropTypes from 'prop-types';
+import { withTranslation } from 'react-i18next';
 
-const DayAuthor = () => {
+const DayAuthor = ({ t }) => {
   const authors = [
     {
       name: 'Maksim Adamavič Bahdanovič',
@@ -37,7 +39,7 @@ const DayAuthor = () => {
             <Card.Title>{dayAuthor.name}</Card.Title>
             <Card.Subtitle className="text-muted">{dayAuthor.date}</Card.Subtitle>
             <Card.Text className="mt-3">{dayAuthor.shortDescription}</Card.Text>
-            <Card.Link href="#">More about...</Card.Link>
+            <Card.Link href="#">{t('More about...')}</Card.Link>
           </Card.Body>
         </Col>
       </Row>
@@ -46,9 +48,14 @@ const DayAuthor = () => {
 
   return (
     <>
-      <h2 className="mb-4">Author of the day</h2>
+      <h2 className="mb-4">{t('Author of the day')}</h2>
       {authorCard}
     </>
   );
 };
-export default DayAuthor;
+
+DayAuthor.propTypes = {
+  t: PropTypes.func.isRequired,
+};
+
+export default withTranslation()(DayAuthor);

@@ -8,7 +8,9 @@
 ### grigoriyklimenko
 |time spent|feature|
 |---|---|
-|   |   |
+| 6h | Information about authors in document file|
+| 1h | create Author of the day component |
+| 1h | add translition to Author of the day component |
 
 ### dnlklbv
 |time spent|feature|
