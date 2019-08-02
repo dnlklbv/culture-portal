@@ -6,6 +6,21 @@ import { withTranslation } from 'react-i18next';
 
 import Form from 'react-bootstrap/Form';
 
+const authors = [
+  {
+    name: 'Maksim Adamavic',
+    birthPlace: 'Minsk',
+  },
+  {
+    name: 'Yanka Kupala',
+    birthPlace: 'Viazynka',
+  },
+  {
+    name: 'Yakub Kolas',
+    birthPlace: 'Akinchitsy',
+  },
+];
+
 class ListOfAuthors extends Component {
   constructor(props) {
     super(props);
@@ -24,7 +39,6 @@ class ListOfAuthors extends Component {
 
   render() {
     const { searchValue } = this.state;
-    const { authors } = this.props;
     const { t } = this.props;
     const { handleSearchChange } = this;
     return (
@@ -38,44 +52,19 @@ class ListOfAuthors extends Component {
         />
         <ul>
           {authors
-            .filter((author) => {
-              const { name, birthPlace } = author.node.frontmatter;
-              return (name + birthPlace).toLowerCase().includes(searchValue.toLowerCase());
-            })
-            .map((author) => {
-              const { id } = author.node;
-              const { path, name } = author.node.frontmatter;
-              return (
-                <li key={id}>
-                  <Link to={`${path}`}>{name}</Link>
-                </li>
-              );
-            })
+            .filter(author => (author.name + author.birthPlace).includes(searchValue))
+            .map(author => (
+              <li>
+                <Link to={`/poets/${author.name}`}>{author.name}</Link>
+              </li>
+            ))
           }
         </ul>
       </>
     );
   }
 }
-
 ListOfAuthors.propTypes = {
-  authors: PropTypes.arrayOf(
-    PropTypes.shape({
-      node: PropTypes.shape({
-        id: PropTypes.string,
-        frontmatter: PropTypes.shape({
-          path: PropTypes.string,
-          lng: PropTypes.string,
-          name: PropTypes.string,
-          birthPlace: PropTypes.string,
-        }),
-      }),
-    }),
-  ).isRequired,
-};
-
-export default ListOfAuthors;
   t: PropTypes.func.isRequired,
 };
-
 export default withTranslation()(ListOfAuthors);
