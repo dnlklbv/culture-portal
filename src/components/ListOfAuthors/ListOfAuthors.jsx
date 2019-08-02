@@ -44,7 +44,7 @@ class ListOfAuthors extends Component {
               const { path, name } = author.node.frontmatter;
               return (
                 <li key={id}>
-                  <Link to={`/poets${path}`}>{name}</Link>
+                  <Link to={`${path}`}>{name}</Link>
                 </li>
               );
             })
