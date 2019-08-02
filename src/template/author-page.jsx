@@ -1,26 +1,30 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { withTranslation } from 'react-i18next';
-
 import { graphql } from 'gatsby';
+import PropTypes from 'prop-types';
 import Layout from '../components/layout';
-import SEO from '../components/seo';
 
-import ListOfAuthors from '../components/ListOfAuthors';
-
-const PoetsPage = ({ data }) => {
+function Template({ data }) {
   const { edges } = data.allJavascriptFrontmatter;
+
   return (
     <Layout>
-      <SEO title="Poets" />
-      <h2 className="mb-4">Poets</h2>
-      <ListOfAuthors authors={edges} />
-      <h3>{edges.name}</h3>
+      <div>
+        {edges.map((author) => {
+          const { id } = author.node;
+          const { name } = author.node.frontmatter;
+          return (
+            <li key={id}>
+              {name}
+            </li>
+          );
+        })
+        }
+      </div>
     </Layout>
   );
-};
+}
 
-PoetsPage.propTypes = {
+Template.propTypes = {
   data: PropTypes.shape({
     allJavascriptFrontmatter: PropTypes.shape({
       edges: PropTypes.arrayOf(PropTypes.shape({
@@ -37,6 +41,7 @@ PoetsPage.propTypes = {
     }),
   }).isRequired,
 };
+
 
 export const pageQuery = graphql`
   query {
@@ -56,4 +61,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default PoetsPage;
+export default Template;
