@@ -4,9 +4,11 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import { withTranslation } from 'react-i18next';
 import LanguagesSwitch from '../languagesSwitch';
 
-const Header = ({ siteTitle }) => (
+
+const Header = ({ t }) => (
   <header
     style={{
       background: 'tomato',
@@ -24,12 +26,12 @@ const Header = ({ siteTitle }) => (
                 textDecoration: 'none',
               }}
             >
-              {siteTitle}
+              {t('Poets of Belarus')}
             </Link>
           </h1>
-          <h2 style={{ fontSize: '1.2rem' }}>Information portal</h2>
+          <h2 style={{ fontSize: '1.2rem' }}>{t('Information Portal')}</h2>
         </Col>
-        <Col md={{ span: 3, offset: 1 }}>
+        <Col md={{ span: 2, offset: 3 }} lg={{ span: 1, offset: 3 }} xs={{ span: 4 }}>
           <LanguagesSwitch />
         </Col>
       </Row>
@@ -38,11 +40,7 @@ const Header = ({ siteTitle }) => (
 );
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  t: PropTypes.func.isRequired,
 };
 
-Header.defaultProps = {
-  siteTitle: 'Poets of Belarus',
-};
-
-export default Header;
+export default withTranslation()(Header);
