@@ -2,25 +2,30 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Layout from '../components/layout';
+import AuthorCard from '../components/AuthorCard';
 
 function Template({ data }) {
   const { edges } = data.allJavascriptFrontmatter;
 
   return (
-    <Layout>
-      <div>
+    <div>
+      <Layout>
         {edges.map((author) => {
           const { id } = author.node;
           const { name } = author.node.frontmatter;
+          const { birthPlace } = author.node.frontmatter;
           return (
-            <li key={id}>
-              {name}
-            </li>
+            <AuthorCard
+              id={id}
+              name={name}
+              birthPlace={birthPlace}
+            />
           );
         })
         }
-      </div>
-    </Layout>
+      </Layout>
+    </div>
+
   );
 }
 
@@ -42,9 +47,8 @@ Template.propTypes = {
   }).isRequired,
 };
 
-
 export const pageQuery = graphql`
-  query {
+  query  {
     allJavascriptFrontmatter {
       edges {
         node {

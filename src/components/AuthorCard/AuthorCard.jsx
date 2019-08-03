@@ -15,7 +15,7 @@ import AuthorGallery from '../AuthorGallery';
 import AuthorVideo from '../AuthorVideo';
 import AuthorMap from '../AuthorMap';
 
-const AuthorCard = ({ t }) => (
+const AuthorCard = ({ t, name }) => (
   <Container>
     <Row className="mb-5">
       <Col className="pl-0" md={{ span: 4 }}>
@@ -28,7 +28,9 @@ const AuthorCard = ({ t }) => (
       <Col>
         <Card border="light">
           <Card.Body>
-            <Card.Title>Maksim Bahdanovich</Card.Title>
+            <Card.Title>
+              { name }
+            </Card.Title>
             <Card.Subtitle className="mb-3 text-muted">poet, publicist, translator, literary critic</Card.Subtitle>
             <Card.Text>
               <Table borderless="true" size="sm">
@@ -37,7 +39,7 @@ const AuthorCard = ({ t }) => (
                     {t('Born')}
                     :
                   </th>
-                  <td>9 December 1891</td>
+                  <td>123</td>
                 </tr>
                 <tr>
                   <th className="pl-0">
@@ -106,6 +108,8 @@ const AuthorCard = ({ t }) => (
 
 AuthorCard.propTypes = {
   t: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
+  // birthPlace: PropTypes.string.isRequired,
 };
 
 export default withTranslation()(AuthorCard);

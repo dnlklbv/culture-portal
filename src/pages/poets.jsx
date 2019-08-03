@@ -1,23 +1,58 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+// import { withTranslation } from 'react-i18next';
 
-import { withTranslation } from 'react-i18next';
-
+import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import ListOfAuthors from '../components/ListOfAuthors';
 
-const PoetsPage = ({ t }) => (
-  <Layout>
-    <SEO title="Poets" />
-    <h2 className="mb-4">{t('Poets')}</h2>
-    <ListOfAuthors />
-  </Layout>
-);
-
-PoetsPage.propTypes = {
-  t: PropTypes.func.isRequired,
+const PoetsPage = ({ data }) => {
+  const { edges } = data.allJavascriptFrontmatter;
+  return (
+    <Layout>
+      <SEO title="Poets" />
+      <h2 className="mb-4">Poets</h2>
+      <ListOfAuthors authors={edges} />
+    </Layout>
+  );
 };
 
-export default withTranslation()(PoetsPage);
+PoetsPage.propTypes = {
+  data: PropTypes.shape({
+    allJavascriptFrontmatter: PropTypes.shape({
+      edges: PropTypes.arrayOf(PropTypes.shape({
+        node: PropTypes.shape({
+          id: PropTypes.string,
+          frontmatter: PropTypes.shape({
+            path: PropTypes.string,
+            lng: PropTypes.string,
+            name: PropTypes.string,
+            birthPlace: PropTypes.string,
+          }),
+        }),
+      })),
+    }),
+  }).isRequired,
+};
+
+export const pageQuery = graphql`
+  query {
+    allJavascriptFrontmatter {
+      edges {
+        node {
+          id
+          frontmatter {
+            lng
+            path
+            birthPlace
+            name
+          }
+        }
+      }
+    }
+  }
+`;
+
+export default PoetsPage;
