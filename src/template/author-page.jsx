@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
@@ -47,8 +48,8 @@ Template.propTypes = {
   }).isRequired,
 };
 
-export const pageQuery = graphql`
-  query  {
+export const query = graphql`
+  query {
     allJavascriptFrontmatter {
       edges {
         node {

@@ -57,6 +57,23 @@ class ListOfAuthors extends Component {
   }
 }
 
+
+ListOfAuthors.propTypes = {
+  authors: PropTypes.arrayOf(
+    PropTypes.shape({
+      node: PropTypes.shape({
+        id: PropTypes.string,
+        frontmatter: PropTypes.shape({
+          path: PropTypes.string,
+          lng: PropTypes.string,
+          name: PropTypes.string,
+          birthPlace: PropTypes.string,
+        }),
+      }),
+    }),
+  ).isRequired,
+};
+
 ListOfAuthors.propTypes = {
   t: PropTypes.func.isRequired,
 };
