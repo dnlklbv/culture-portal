@@ -28,7 +28,10 @@
 ### christinaalimova
 |time spent|feature|
 |---|---|
-|   |   |
+| 1h | add developer info |
+| 4h | Create map for Author Page|
+| 4h | Add markers to the Map |
+| 1h | 404 error page |
 
 ### chrisgerby
 |time spent|feature|
