@@ -41,3 +41,4 @@
 | 1h | setup image gallery |
 | 1h | write and style portal description |
 | 2h | add video to the AuthorCard |
+| 1.5h | create pages using API of gatsby |

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withTranslation } from 'react-i18next';
+// import { withTranslation } from 'react-i18next';
 
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
@@ -15,7 +15,6 @@ const PoetsPage = ({ data }) => {
       <SEO title="Poets" />
       <h2 className="mb-4">Poets</h2>
       <ListOfAuthors authors={edges} />
-      <h3>{edges.name}</h3>
     </Layout>
   );
 };

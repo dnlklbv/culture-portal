@@ -1,6 +1,6 @@
 exports.frontmatter = {
   path: '/Adamovic',
   lng: 'en',
-  name: 'Maksim Adamavic Bahdanovic',
+  name: '111Maksim Adamavic Bahdanovic',
   birthPlace: 'Minsk',
 };

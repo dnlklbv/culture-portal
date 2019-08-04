@@ -37,11 +37,10 @@ class ListOfAuthors extends Component {
           placeholder={t('Search by name, place of birth')}
         />
         <ul>
-          {authors
-            .filter((author) => {
-              const { name, birthPlace } = author.node.frontmatter;
-              return (name + birthPlace).toLowerCase().includes(searchValue.toLowerCase());
-            })
+          {authors.filter((author) => {
+            const { name, birthPlace } = author.node.frontmatter;
+            return (name + birthPlace).toLowerCase().includes(searchValue.toLowerCase());
+          })
             .map((author) => {
               const { id } = author.node;
               const { path, name } = author.node.frontmatter;
@@ -57,6 +56,7 @@ class ListOfAuthors extends Component {
     );
   }
 }
+
 
 ListOfAuthors.propTypes = {
   authors: PropTypes.arrayOf(
@@ -74,8 +74,7 @@ ListOfAuthors.propTypes = {
   ).isRequired,
 };
 
-export default ListOfAuthors;
+ListOfAuthors.propTypes = {
   t: PropTypes.func.isRequired,
 };
-
 export default withTranslation()(ListOfAuthors);
