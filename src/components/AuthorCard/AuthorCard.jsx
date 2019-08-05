@@ -15,10 +15,11 @@ import AuthorGallery from '../AuthorGallery';
 import AuthorVideo from '../AuthorVideo';
 import AuthorMap from '../AuthorMap';
 
-const AuthorCard = ({ t, data }) => {
+const AuthorCard = ({ t, data, i18n }) => {
+  const lng = data[i18n.language];
   const {
     name, imgSrc, birthDate, deathDate, bio, works, gallery, videoId, map,
-  } = data;
+  } = lng;
   return (
     <Container>
       <Row className="mb-5">
@@ -92,6 +93,9 @@ const AuthorCard = ({ t, data }) => {
 };
 
 AuthorCard.propTypes = {
+  i18n: PropTypes.shape({
+    language: PropTypes.string,
+  }).isRequired,
   t: PropTypes.func.isRequired,
   data: PropTypes.shape({
     name: PropTypes.string,
