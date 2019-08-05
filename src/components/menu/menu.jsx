@@ -24,9 +24,6 @@ const Menu = ({ t }) => (
               <li className="nav-item">
                 <Link className="nav-link" to="/poets">{t('Poets')}</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/">{t('Contact us')}</Link>
-              </li>
             </ul>
           </nav>
         </Col>
