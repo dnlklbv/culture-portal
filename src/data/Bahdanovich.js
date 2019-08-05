@@ -84,7 +84,7 @@ exports.frontmatter = {
 
   ru: {
     path: '/Bahdanovic',
-    name: 'Макс Adamavic Bahdanovic',
+    name: 'Maksim Adamavic Bahdanovic',
     birthPlace: 'Minsk',
     birthDate: '27 November (9 December) 1891',
     deathDate: '12 (25) May 1917',
