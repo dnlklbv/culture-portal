@@ -11,6 +11,9 @@ const Footer = ({ t }) => (
       padding: '0.3rem',
       color: 'white',
       textAlign: 'center',
+      position: 'absolute',
+      bottom: '0px',
+      width: '100%',
     }}
   >
     <p>
