@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './AuthorVideo.css';
 
 class AuthorVideo extends Component {
+  constructor(props) {
+    super(props);
+
+    this.play = this.play.bind(this);
+  }
+
   play(e) {
     e.preventDefault();
     const block = document.querySelector('.author-video-block');
-    const frame = '<iframe width="640" height="360" src="https://www.youtube.com/embed/ysgSF8PCRAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    const frame = `<iframe width="640" height="360" src="https://www.youtube.com/embed/${this.props.videoId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
     block.innerHTML = frame;
   }
 
@@ -18,11 +25,11 @@ class AuthorVideo extends Component {
         onKeyDown={this.onKeyDown}
         tabIndex={0}
       >
-        <a href="https://www.youtube.com/watch?v=ysgSF8PCRAk">
+        <a href={`https://www.youtube.com/watch?v=${this.props.videoId}`}>
           <picture>
             <img
               style={{ width: '100%' }}
-              src="https://i.ytimg.com/vi_webp/ysgSF8PCRAk/sddefault.webp"
+              src={`https://i.ytimg.com/vi_webp/${this.props.videoId}/sddefault.webp`}
               alt="video"
             />
           </picture>
@@ -45,4 +52,9 @@ class AuthorVideo extends Component {
     );
   }
 }
+
+AuthorVideo.propTypes = {
+  videoId: PropTypes.string.isRequired,
+};
+
 export default AuthorVideo;
