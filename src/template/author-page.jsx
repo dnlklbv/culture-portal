@@ -6,23 +6,19 @@ import Layout from '../components/layout';
 import AuthorCard from '../components/AuthorCard';
 
 function Template({ data }) {
-  const { edges } = data.allJavascriptFrontmatter;
+  const { id } = data;
+  const { name } = data.javascriptFrontmatter.frontmatter;
+  const { birthPlace } = data.javascriptFrontmatter.frontmatter;
 
   return (
     <div>
       <Layout>
-        {edges.map((author) => {
-          const { id } = author.node;
-          const { name } = author.node.frontmatter;
-          const { birthPlace } = author.node.frontmatter;
-          return (
-            <AuthorCard
-              id={id}
-              name={name}
-              birthPlace={birthPlace}
-            />
-          );
-        })
+        {
+          <AuthorCard
+            id={id}
+            name={name}
+            birthPlace={birthPlace}
+          />
         }
       </Layout>
     </div>
@@ -49,18 +45,14 @@ Template.propTypes = {
 };
 
 export const query = graphql`
-  query {
-    allJavascriptFrontmatter {
-      edges {
-        node {
-          id
-          frontmatter {
-            lng
-            path
-            birthPlace
-            name
-          }
-        }
+  query($path: String!) {
+    javascriptFrontmatter(frontmatter: {path: {eq: $path}}) {
+      id
+      frontmatter {
+        lng
+        path
+        birthPlace
+        name
       }
     }
   }
