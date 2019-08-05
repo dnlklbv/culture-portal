@@ -23,6 +23,8 @@ class ListOfAuthors extends Component {
   }
 
   render() {
+    const { i18n } = this.props;
+    const { language } = i18n;
     const { searchValue } = this.state;
     const { authors } = this.props;
     const { t } = this.props;
@@ -38,12 +40,13 @@ class ListOfAuthors extends Component {
         />
         <ul>
           {authors.filter((author) => {
-            const { name, birthPlace } = author.node.frontmatter;
+            const lang = author.node.frontmatter[language];
+            const { name, birthPlace } = lang;
             return (name + birthPlace).toLowerCase().includes(searchValue.toLowerCase());
           })
             .map((author) => {
               const { id } = author.node;
-              const { path, name } = author.node.frontmatter;
+              const { path, name } = author.node.frontmatter[language];
               return (
                 <li key={id}>
                   <Link to={`${path}`}>{name}</Link>
@@ -59,6 +62,9 @@ class ListOfAuthors extends Component {
 
 
 ListOfAuthors.propTypes = {
+  i18n: PropTypes.shape({
+    language: PropTypes.string,
+  }).isRequired,
   authors: PropTypes.arrayOf(
     PropTypes.shape({
       node: PropTypes.shape({

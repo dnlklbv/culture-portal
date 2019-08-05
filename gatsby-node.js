@@ -11,10 +11,9 @@ exports.createPages = ({ actions, graphql }) => {
         node {
           id
           frontmatter {
-            lng
-            path
-            birthPlace
-            name
+            en {
+              path
+            }
           }
         }
       }
@@ -27,7 +26,7 @@ exports.createPages = ({ actions, graphql }) => {
 
     res.data.allJavascriptFrontmatter.edges.forEach(({ node }) => {
       createPage({
-        path: node.frontmatter.path,
+        path: node.frontmatter.en.path,
         component: postTemplate,
       });
     });

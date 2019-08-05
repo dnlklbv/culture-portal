@@ -32,29 +32,76 @@ Template.propTypes = {
 
 export const query = graphql`
   query($path: String!) {
-    javascriptFrontmatter(frontmatter: {path: {eq: $path}}) {
-      id
+    javascriptFrontmatter(frontmatter: {en: {path: {eq: $path}}}) {
       frontmatter {
-        path
-        birthPlace
-        name
-        birthDate
-        deathDate
-        imgSrc
-        videoId
-        gallery
-        map {
-          lat
-          lng
-          descr
+        en {
+          path
+          birthPlace
+          name
+          birthDate
+          deathDate
+          imgSrc
+          videoId
+          gallery
+          map {
+            lat
+            lng
+            descr
+          }
+          works {
+            year
+            text
+          }
+          bio {
+            year
+            text
+          }
         }
-        works {
-          year
-          text
+        ru {
+          path
+          birthPlace
+          name
+          birthDate
+          deathDate
+          imgSrc
+          videoId
+          gallery
+          map {
+            lat
+            lng
+            descr
+          }
+          works {
+            year
+            text
+          }
+          bio {
+            year
+            text
+          }
         }
-        bio {
-          year
-          text
+        by {
+          path
+          birthPlace
+          name
+          birthDate
+          deathDate
+          imgSrc
+          videoId
+          gallery
+          map {
+            lat
+            lng
+            descr
+          }
+          works {
+            year
+            text
+          }
+          bio {
+            year
+            text
+          }
         }
       }
     }
