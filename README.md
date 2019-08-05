@@ -1,10 +1,5 @@
 ## worklog
 
-### andreysomov
-|time spent|feature|
-|---|---|
-|   |   |
-
 ### grigoriyklimenko
 |time spent|feature|
 |---|---|

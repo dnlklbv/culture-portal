@@ -10,10 +10,6 @@ const DevTeam = ({ t }) => {
   const ghURL = 'https://github.com/';
   const developers = [
     {
-      name: 'Andrey Somov',
-      username: 'AndreySomov',
-    },
-    {
       name: 'Daniil Kuliabau',
       username: 'dnlklbv',
     },
