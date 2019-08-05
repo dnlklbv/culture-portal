@@ -1,7 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import Table from 'react-bootstrap/Table';
 
-const AuthorWorks = () => (
+const AuthorWorks = ({ works }) => (
   <Table responsive bordered>
     <thead className="bg-light">
       <tr>
@@ -10,17 +12,21 @@ const AuthorWorks = () => (
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>1908</td>
-        <td>Vianok</td>
-      </tr>
-      <tr>
-        <td>1908</td>
-        <td>Vianok</td>
-      </tr>
+      {works.map(item => (
+        <tr>
+          <td>{item.year}</td>
+          <td>{item.text}</td>
+        </tr>
+      ))}
     </tbody>
-
   </Table>
 );
+
+AuthorWorks.propTypes = {
+  works: PropTypes.arrayOf(PropTypes.shape({
+    year: PropTypes.string,
+    text: PropTypes.string,
+  })).isRequired,
+};
 
 export default AuthorWorks;
