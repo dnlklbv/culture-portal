@@ -7,6 +7,7 @@
 | 1h | create Author of the day component |
 | 1h | add translition to Author of the day component |
 | 0.5h | fill data about authors |
+| 1h | fill data translation about authors |
 
 ### dnlklbv
 |time spent|feature|
