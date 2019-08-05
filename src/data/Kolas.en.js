@@ -22,19 +22,19 @@ exports.frontmatter = {
   works: [
     {
       year: '1942',
-      text: 'Сборник стихов "Отомстим"',
+      text: 'Collections of poems "Отомстим"',
     },
     {
       year: '1943',
-      text: 'Сборник стихов "Голос земли"',
+      text: 'Collections of poems "Голос земли"',
     },
     {
       year: '1945',
-      text: 'Поэма "Возмездие"',
+      text: 'Poem "Возмездие"',
     },
     {
       year: '1921-1957',
-      text: 'Трилогия "На росстанях"',
+      text: 'Trilogy "На росстанях"',
     },
   ],
   bio: [

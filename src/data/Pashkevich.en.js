@@ -22,7 +22,7 @@ exports.frontmatter = {
   works: [
     {
       year: '1906',
-      text: 'Сборники стихов "Хрэст на свабоду" і "Скрыпка беларуская"',
+      text: 'Collections of poems "Хрэст на свабоду" and "Скрыпка беларуская"',
     },
 
   ],
