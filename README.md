@@ -45,4 +45,6 @@
 | 1h | write and style portal description |
 | 2h | add video to the AuthorCard |
 | 1.5h | create pages using API of gatsby |
+| 4h | working with gatsby queries |
+| 1h | fill data about authors |
 | 0.25h | correct mistakes on 404 page  |
