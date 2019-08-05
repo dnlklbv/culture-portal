@@ -9,6 +9,7 @@ import Col from 'react-bootstrap/Col';
 
 import Header from './header';
 import Menu from './menu';
+import Footer from './Footer';
 
 const Layout = ({ children }) => (
   <>
@@ -23,6 +24,7 @@ const Layout = ({ children }) => (
         </Row>
       </Container>
     </main>
+    <Footer />
   </>
 );
 
