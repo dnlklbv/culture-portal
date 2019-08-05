@@ -1,34 +1,41 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
+import { withTranslation } from 'react-i18next';
+
 import Jumbotron from 'react-bootstrap/Jumbotron';
 
-const PortalDescription = () => (
+const PortalDescription = ({ t }) => (
   <Jumbotron className="px-5 py-4 mb-5">
     <h2
       className="mb-5"
       style={{ textAlign: 'center' }}
     >
-        Welcome to the information portal about the poets of Belarus!
+      {t('Welcome to the information portal about the poets of Belarus!')}
     </h2>
     <p>
-      On this website you can find:
+      {t('On this website you can find:')}
       <ul>
         <li>
-          the biographies of the authors that describe the most important stages of their  lives,
+          {t('the biographies of the authors that describe the most important stages of their  lives,')}
         </li>
         <li>
-          the maps of memorable places connected with their life and work,
+          {t('the maps of memorable places connected with their life and work,')}
         </li>
         <li>
-          the images and interesting videos that describe
-          the most significant pieces of authors’ works!
+          {t('the images and interesting videos that describe the most significant pieces of authors’ works!')}
         </li>
       </ul>
 
     </p>
     <p>
-      Enjoy reading and exploring the lives of the most honored poets of Belarus!
+      {t('Enjoy reading and exploring the lives of the most honored poets of Belarus!')}
     </p>
   </Jumbotron>
 );
 
-export default PortalDescription;
+PortalDescription.propTypes = {
+  t: PropTypes.func.isRequired,
+};
+
+export default withTranslation()(PortalDescription);
