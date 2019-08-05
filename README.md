@@ -45,3 +45,4 @@
 | 1h | write and style portal description |
 | 2h | add video to the AuthorCard |
 | 1.5h | create pages using API of gatsby |
+| 0.25h | correct mistakes on 404 page  |
