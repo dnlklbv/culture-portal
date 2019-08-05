@@ -11,6 +11,7 @@
 | 6h | Information about authors in document file|
 | 1h | create Author of the day component |
 | 1h | add translition to Author of the day component |
+| 0.5h | fill data about authors |
 
 ### dnlklbv
 |time spent|feature|
