@@ -7,8 +7,7 @@ import AuthorCard from '../components/AuthorCard';
 
 function Template({ data }) {
   const { id } = data;
-  const { name } = data.javascriptFrontmatter.frontmatter;
-  const { birthPlace } = data.javascriptFrontmatter.frontmatter;
+  const { frontmatter } = data.javascriptFrontmatter;
 
   return (
     <div>
@@ -16,8 +15,7 @@ function Template({ data }) {
         {
           <AuthorCard
             id={id}
-            name={name}
-            birthPlace={birthPlace}
+            data={frontmatter}
           />
         }
       </Layout>
@@ -28,19 +26,7 @@ function Template({ data }) {
 
 Template.propTypes = {
   data: PropTypes.shape({
-    allJavascriptFrontmatter: PropTypes.shape({
-      edges: PropTypes.arrayOf(PropTypes.shape({
-        node: PropTypes.shape({
-          id: PropTypes.string,
-          frontmatter: PropTypes.shape({
-            path: PropTypes.string,
-            lng: PropTypes.string,
-            name: PropTypes.string,
-            birthPlace: PropTypes.string,
-          }),
-        }),
-      })),
-    }),
+    javascriptFrontmatter: PropTypes.object,
   }).isRequired,
 };
 
@@ -49,10 +35,27 @@ export const query = graphql`
     javascriptFrontmatter(frontmatter: {path: {eq: $path}}) {
       id
       frontmatter {
-        lng
         path
         birthPlace
         name
+        birthDate
+        deathDate
+        imgSrc
+        videoId
+        gallery
+        map {
+          lat
+          lng
+          descr
+        }
+        works {
+          year
+          text
+        }
+        bio {
+          year
+          text
+        }
       }
     }
   }
