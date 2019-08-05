@@ -11,12 +11,12 @@ exports.frontmatter = {
       {
         lat: '53.8942981',
         lng: '27.536717',
-        descr: 'Помнік Максіму Багдановічу',
+        descr: 'Monument to Maxim Bogdanovich',
       },
       {
         lat: '53.8848456',
         lng: '27.5206753',
-        descr: 'Памятник Максиму Богдановичу',
+        descr: 'Monument to Maxim Bogdanovich',
       },
     ],
     gallery: [
@@ -27,15 +27,15 @@ exports.frontmatter = {
     works: [
       {
         year: '1908',
-        text: 'Над магiлай',
+        text: 'Over the grave',
       },
       {
         year: '1908',
-        text: 'Прыйдзе вясна',
+        text: 'Spring comes',
       },
       {
         year: '1908',
-        text: 'Мае песнi',
+        text: 'My songs',
       },
     ],
     bio: [
@@ -84,17 +84,17 @@ exports.frontmatter = {
 
   ru: {
     path: '/Bahdanovic',
-    name: 'Maksim Adamavic Bahdanovic',
-    birthPlace: 'Minsk',
-    birthDate: '27 November (9 December) 1891',
-    deathDate: '12 (25) May 1917',
+    name: 'Максим Адамович Богданович',
+    birthPlace: 'Минск',
+    birthDate: '27 Ноября (9 Декабря) 1891',
+    deathDate: '12 (25) Мая 1917',
     imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Maxim_Bogdanovich_by_Valentin_Volkov_1927.JPG/220px-Maxim_Bogdanovich_by_Valentin_Volkov_1927.JPG',
     videoId: 'DXDj1iFkMAk',
     map: [
       {
         lat: '53.8942981',
         lng: '27.536717',
-        descr: 'Помнік Максіму Багдановічу',
+        descr: 'Памятник Максиму Богдановичу',
       },
       {
         lat: '53.8848456',
@@ -110,67 +110,67 @@ exports.frontmatter = {
     works: [
       {
         year: '1908',
-        text: 'Над магiлай',
+        text: 'Над могилой',
       },
       {
         year: '1908',
-        text: 'Прыйдзе вясна',
+        text: 'придет весна',
       },
       {
         year: '1908',
-        text: 'Мае песнi',
+        text: 'Мои песни',
       },
     ],
     bio: [
       {
         year: '1891',
-        text: 'Bahdanovič was born in Minsk in the family of Adam Bahdanovič, an important Belarusian ethnographer.',
+        text: ' Богданович родился в Минске, в семье Адама Богдановича, важного белорусского этнографа.',
       },
       {
         year: '1892',
-        text: 'The family moved to Hrodna where Maksims father received a job at local bank.',
+        text: 'Семья переезжает в Гродно, где отец Максима получает работу в местном банке.',
       },
       {
         year: '1896',
-        text: 'The future poets mother, Maria, died of tuberculosis. Adam Bahdanovič moved with his children to Nizhny Novgorod, Russia. At that time Maksim wrote his first poems in the Belarusian language.',
+        text: 'Мать будущего поэта, Мария, умерла от туберкулеза. Адам Богданович переехал с детьми в Нижний Новгород, Россия. Тогда же Максим написал свои первые стихи на белорусском языке.',
       },
       {
         year: '1902',
-        text: 'Bahdanovič attended a gymnasium. During the Revolution of 1905 he was an active participant of the strikes.',
+        text: 'Максим поступил в Нижегородскую мужскую гимназию. Во время Революции 1905 года принимает участие в ученических и студенческих демонстрациях, за что получает аттестацию «неблагонадёжного ученика».',
       },
       {
         year: '1907',
-        text: 'Nasha Niva came out with Bahdanovičs first published work — the novel Muzyka.',
+        text: 'Наша Нива" вышла с первой опубликованной работой Богдановича - романом "музыка',
       },
       {
         year: '1908',
-        text: 'The poets family moved to Yaroslavl',
+        text: 'Cемья поэта переехала в Ярославль',
       },
       {
         year: '1911',
-        text: 'After finishing school, Bahdanovič went to Belarus to meet important figures of the Belarusian Renaissance: Vaclau Lastouski, Ivan Luckievich and Anton Luckievich. In the same year he began studying of law at a Yaroslavl lyceum. During his studies Bahdanovič worked at a newspaper, wrote numerous works of literature and was actively published in both Belarus and Russia.',
+        text: 'После окончания школы Богданович отправился в Беларусь, чтобы встретиться с деятелями белорусского Возрождения: Вацлавом Ластовским, Иваном Луцкевичем и Антоном Луцкевичем. В том же году он начал изучать право в Ярославском лицее. Во время учебы Богданович работал в газете, писал многочисленные литературные произведения и активно публиковался как в Беларуси, так и в России.',
       },
       {
         year: '1914',
-        text: 'Vianok (A Wreath), his only book of poems, was published in Vilna (today Vilnius).',
+        text: 'Его единственная книга стихов "Венок" была издана в Вильне (сегодня Вильнюс).',
       },
       {
         year: '1916',
-        text: 'After absolvation of the lyceum, Maksim Bahdanovič moved to Minsk and worked there at the local guberniya administration.',
+        text: 'После лицея Максим Богданович переехал в Минск и работал там в местной губернской администрации.',
       },
       {
         year: '1917',
-        text: 'In February Bahdanovič went to Crimea to be treated for tuberculosis. The treatment was unsuccessful, and that year he died in Yalta.',
+        text: 'В феврале Богданович отправился в Крым лечиться от туберкулеза. Лечение оказалось безуспешным, и в том же году он умер в Ялте',
       },
     ],
   },
 
   by: {
     path: '/Bahdanovic',
-    name: 'Maksim Adamavic Bahdanovic',
+    name: 'Максі́м Ада́мавіч Багдано́віч',
     birthPlace: 'Minsk',
-    birthDate: '27 November (9 December) 1891',
-    deathDate: '12 (25) May 1917',
+    birthDate: '9 снежня (27 лістапада) 1891',
+    deathDate: '12 (25) мая 1917',
     imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Maxim_Bogdanovich_by_Valentin_Volkov_1927.JPG/220px-Maxim_Bogdanovich_by_Valentin_Volkov_1927.JPG',
     videoId: 'DXDj1iFkMAk',
     map: [
@@ -182,7 +182,7 @@ exports.frontmatter = {
       {
         lat: '53.8848456',
         lng: '27.5206753',
-        descr: 'Памятник Максиму Богдановичу',
+        descr: 'Помнік Максіму Багдановічу',
       },
     ],
     gallery: [
@@ -207,43 +207,43 @@ exports.frontmatter = {
     bio: [
       {
         year: '1891',
-        text: 'Bahdanovič was born in Minsk in the family of Adam Bahdanovič, an important Belarusian ethnographer.',
+        text: ' Багдановіч нарадзіўся ў Мінску, у сям\'і Адама Багдановіча, важнага беларускага этнографа.',
       },
       {
         year: '1892',
-        text: 'The family moved to Hrodna where Maksims father received a job at local bank.',
+        text: 'Сям\'я пераязджае ў Гродна, дзе бацька Максіма атрымлівае працу ў мясцовым банку.',
       },
       {
         year: '1896',
-        text: 'The future poets mother, Maria, died of tuberculosis. Adam Bahdanovič moved with his children to Nizhny Novgorod, Russia. At that time Maksim wrote his first poems in the Belarusian language.',
+        text: 'Маці будучага паэта, Марыя, памерла ад сухотаў. Адам Багдановіч пераехаў з дзецьмі ў Ніжні Ноўгарад, Расія. Тады ж Максім напісаў свае першыя вершы на беларускай мове.',
       },
       {
         year: '1902',
-        text: 'Bahdanovič attended a gymnasium. During the Revolution of 1905 he was an active participant of the strikes.',
+        text: 'Максім паступіў у Ніжагародскую мужчынскую гімназію. Падчас Рэвалюцыі 1905 года прымае ўдзел у вучнёўскіх і студэнцкіх дэманстрацыях, за што атрымлівае атэстацыю "нядобранадзейнага вучня".',
       },
       {
         year: '1907',
-        text: 'Nasha Niva came out with Bahdanovičs first published work — the novel Muzyka.',
+        text: ' "Наша Ніва выйшла з першай апублікаванай працай Багдановіча - раманам "музыка"',
       },
       {
         year: '1908',
-        text: 'The poets family moved to Yaroslavl',
+        text: 'Cям\'я паэта пераехала ў Яраслаўль.',
       },
       {
         year: '1911',
-        text: 'After finishing school, Bahdanovič went to Belarus to meet important figures of the Belarusian Renaissance: Vaclau Lastouski, Ivan Luckievich and Anton Luckievich. In the same year he began studying of law at a Yaroslavl lyceum. During his studies Bahdanovič worked at a newspaper, wrote numerous works of literature and was actively published in both Belarus and Russia.',
+        text: 'Пасля заканчэння школы Багдановіч адправіўся ў Беларусь, каб сустрэцца з дзеячамі беларускага Адраджэння: Вацлавам Ластоўскім, Іванам Луцкевічам і Антонам Луцкевічам. У тым жа годзе ён пачаў вывучаць права ў Яраслаўскім ліцэі. Падчас вучобы Багдановіч працаваў у газеце, пісаў шматлікія літаратурныя творы і актыўна публікаваўся як у Беларусі, так і ў Расіі.',
       },
       {
         year: '1914',
-        text: 'Vianok (A Wreath), his only book of poems, was published in Vilna (today Vilnius).',
+        text: 'Яго адзіная кніга вершаў "Вянок" была выдадзена ў Вільні (сёння Вільня).',
       },
       {
         year: '1916',
-        text: 'After absolvation of the lyceum, Maksim Bahdanovič moved to Minsk and worked there at the local guberniya administration.',
+        text: 'Пасля ліцэя Максім Багдановіч пераехаў у Мінск і працаваў там у мясцовай губернскай адміністрацыі.',
       },
       {
         year: '1917',
-        text: 'In February Bahdanovič went to Crimea to be treated for tuberculosis. The treatment was unsuccessful, and that year he died in Yalta.',
+        text: ' У лютым Багдановіч адправіўся ў Крым лячыцца ад сухотаў. Лячэнне аказалася беспаспяховым, і ў тым жа годзе ён памёр у Ялце.',
       },
     ],
   },
