@@ -33,7 +33,15 @@ const DevTeam = ({ t }) => {
     {
       name: 'Krystsina Gerko',
       username: 'ChrisGerBy',
-      contribution: [],
+      contribution: [
+        'header',
+        'navigation',
+        'author card component',
+        'timeline',
+        'gallery of pictures',
+        'video',
+        'fill data about authors',
+      ],
     },
     {
       name: 'Christsina Alimova',
