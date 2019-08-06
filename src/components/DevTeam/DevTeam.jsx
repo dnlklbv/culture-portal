@@ -24,7 +24,11 @@ const DevTeam = ({ t }) => {
     {
       name: 'Grigoriy Klimenko',
       username: 'GrigoriyKlimenko',
-      contribution: [],
+      contribution: [
+        'collecting data',
+        'data translation',
+        'author of the day component',
+      ],
     },
     {
       name: 'Krystsina Gerko',
