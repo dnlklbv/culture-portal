@@ -46,7 +46,11 @@ const DevTeam = ({ t }) => {
     {
       name: 'Christsina Alimova',
       username: 'ChristinaAlimova',
-      contribution: [],
+      contribution: [
+        'map for author page',
+        'markers for map',
+        'error page'
+      ],
     },
   ];
 
