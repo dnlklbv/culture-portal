@@ -12,18 +12,29 @@ const DevTeam = ({ t }) => {
     {
       name: 'Daniil Kuliabau',
       username: 'dnlklbv',
+      contribution: [
+        'workflow organization',
+        'team component',
+        'authors search',
+        'data structure',
+        'data querying',
+        'internationalization',
+      ],
     },
     {
       name: 'Grigoriy Klimenko',
       username: 'GrigoriyKlimenko',
+      contribution: [],
     },
     {
       name: 'Krystsina Gerko',
       username: 'ChrisGerBy',
+      contribution: [],
     },
     {
       name: 'Christsina Alimova',
       username: 'ChristinaAlimova',
+      contribution: [],
     },
   ];
 
@@ -32,7 +43,12 @@ const DevTeam = ({ t }) => {
       <Card.Img variant="top" src={`${ghURL + developer.username}.png`} />
       <Card.Body>
         <Card.Title className="mb-3">{developer.name}</Card.Title>
-        <Card.Subtitle className="text-muted">{developer.username}</Card.Subtitle>
+        <Card.Subtitle className="text-muted mb-3">{developer.username}</Card.Subtitle>
+        <ul className="pl-1">
+          {developer.contribution.map(item => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
       </Card.Body>
       <Card.Footer>
         <Card.Link href={ghURL + developer.username} target="_blank">GitHub</Card.Link>
