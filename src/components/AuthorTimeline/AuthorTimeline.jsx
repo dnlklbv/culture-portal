@@ -7,7 +7,7 @@ const AuthorTimeline = ({ bio }) => (
   <Timeline lineColor="#ddd" className="mt-3">
     {bio.map(item => (
       <TimelineItem
-        key="001"
+        key={item.year}
         dateText={item.year}
         dateInnerStyle={{ background: 'tomato' }}
         style={{ color: 'tomato' }}

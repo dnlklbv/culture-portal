@@ -36,8 +36,8 @@ const AuthorCard = ({ t, data, i18n }) => {
               <Card.Title>
                 { name }
               </Card.Title>
-              <Card.Text>
-                <Table borderless="true" size="sm">
+              <Table borderless="true" size="sm">
+                <tbody>
                   <tr>
                     <th className="pl-0">
                       {t('Born')}
@@ -52,8 +52,8 @@ const AuthorCard = ({ t, data, i18n }) => {
                     </th>
                     <td>{deathDate}</td>
                   </tr>
-                </Table>
-              </Card.Text>
+                </tbody>
+              </Table>
             </Card.Body>
           </Card>
         </Col>
