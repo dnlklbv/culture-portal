@@ -6,7 +6,7 @@ import Carousel from 'react-bootstrap/Carousel';
 const AuthorGallery = ({ gallery }) => (
   <Carousel>
     {gallery.map(img => (
-      <Carousel.Item>
+      <Carousel.Item key={img}>
         <img
           className="d-block w-100"
           src={img}
