@@ -67,3 +67,5 @@
 - [x] **30** Project is made using gatsbyjs;
 - [ ] **20** contentful / netlify cms is used for content management
 - [x] **10** Portal has third language;
+
+**Total**: 220
