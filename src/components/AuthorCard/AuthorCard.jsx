@@ -38,20 +38,22 @@ const AuthorCard = ({ t, data, i18n }) => {
               </Card.Title>
               <Card.Text>
                 <Table borderless="true" size="sm">
-                  <tr>
-                    <th className="pl-0">
-                      {t('Born')}
+                  <tbody>
+                    <tr>
+                      <th className="pl-0">
+                        {t('Born')}
                     :
-                    </th>
-                    <td>{birthDate}</td>
-                  </tr>
-                  <tr>
-                    <th className="pl-0">
-                      {t('Died')}
+                      </th>
+                      <td>{birthDate}</td>
+                    </tr>
+                    <tr>
+                      <th className="pl-0">
+                        {t('Died')}
                     :
-                    </th>
-                    <td>{deathDate}</td>
-                  </tr>
+                      </th>
+                      <td>{deathDate}</td>
+                    </tr>
+                  </tbody>
                 </Table>
               </Card.Text>
             </Card.Body>
