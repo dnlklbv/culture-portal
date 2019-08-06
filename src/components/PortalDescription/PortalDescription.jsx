@@ -15,19 +15,18 @@ const PortalDescription = ({ t }) => (
     </h2>
     <p>
       {t('On this website you can find:')}
-      <ul>
-        <li>
-          {t('the biographies of the authors that describe the most important stages of their  lives,')}
-        </li>
-        <li>
-          {t('the maps of memorable places connected with their life and work,')}
-        </li>
-        <li>
-          {t('the images and interesting videos that describe the most significant pieces of authors’ works!')}
-        </li>
-      </ul>
-
     </p>
+    <ul>
+      <li>
+        {t('the biographies of the authors that describe the most important stages of their  lives,')}
+      </li>
+      <li>
+        {t('the maps of memorable places connected with their life and work,')}
+      </li>
+      <li>
+        {t('the images and interesting videos that describe the most significant pieces of authors’ works!')}
+      </li>
+    </ul>
     <p>
       {t('Enjoy reading and exploring the lives of the most honored poets of Belarus!')}
     </p>
