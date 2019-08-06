@@ -13,7 +13,7 @@ const AuthorWorks = ({ works }) => (
     </thead>
     <tbody>
       {works.map(item => (
-        <tr>
+        <tr key={item.year}>
           <td>{item.year}</td>
           <td>{item.text}</td>
         </tr>
