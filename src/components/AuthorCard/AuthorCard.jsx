@@ -16,10 +16,18 @@ import AuthorVideo from '../AuthorVideo';
 import AuthorMap from '../AuthorMap';
 
 const AuthorCard = ({ t, data, i18n }) => {
-  const lng = data[i18n.language];
+  let lng = i18n.language;
+  if (i18n.language === 'en-GB') {
+    lng = 'en';
+  } else if (i18n.language === 'be-BY') {
+    lng = 'by';
+  } else if (i18n.language === 'ru-RU') {
+    lng = 'ru';
+  }
+  const lngData = data[lng];
   const {
     name, imgSrc, birthDate, deathDate, bio, works, gallery, videoId, map,
-  } = lng;
+  } = lngData;
   return (
     <Container>
       <Row className="mb-5">

@@ -9,7 +9,14 @@ import { withTranslation } from 'react-i18next';
 
 const DayAuthor = ({ t, authors, i18n }) => {
   const day = new Date().getDate();
-  const lng = i18n.language;
+  let lng = i18n.language;
+  if (i18n.language === 'en-GB') {
+    lng = 'en';
+  } else if (i18n.language === 'be-BY') {
+    lng = 'by';
+  } else if (i18n.language === 'ru-RU') {
+    lng = 'ru';
+  }
   const dayAuthor = authors[day % authors.length].node.frontmatter[lng];
 
   return (
